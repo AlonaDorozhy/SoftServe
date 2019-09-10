@@ -21,6 +21,14 @@ describe("Task 7", function () {
                 reason: 'The maximum value must be greater than the minimum'
             })
         });
+    it(`Passed numbers smaller then 0`,
+        function () {
+
+            expect(fibonacci({ min: -5, max: -14 })), (res = {
+                status: "Failed",
+                reason: 'Passed numbers smaller then 0'
+            })
+        });
 
  
 });
