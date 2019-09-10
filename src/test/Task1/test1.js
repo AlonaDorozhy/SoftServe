@@ -2,6 +2,7 @@ describe("Task 1", function () {
 
     it(`Failed if incorrectly entered length and / or width. It must be a number`,
         function () {
+            
             assert.equal((chessboard("p", 4, "*")), '{"status":"Failed","reason":"Incorrectly entered length and / or width. It must be a number"}');
         });
 

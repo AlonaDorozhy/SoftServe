@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        .style {
+
+            height: 230px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        //  let chai = require('chai');
+           let expect = chai.expect;
+        let assert = chai.assert;
+    </script>
+</head>
+<body>
+<div class=" container">
+    <div class="main">
+        <div class="row">
+            <div class="style col-md-3">
+                <h1>Task 7</h1>
+                <div id="result7"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script src="task7.js"></script>
+    <script src="test7.js"></script>
+
+    <div id="mocha"></div>
+    <script>
+        mocha.run();
+    </script>
+</body>
+
+</html>
